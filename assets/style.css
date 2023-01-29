@@ -1,0 +1,30 @@
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white
+}
+
+body {
+    padding-top: 50px;
+    display: block;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    background-color: white;
+}
+
+.subtitle {
+    padding-bottom: 10px;
+    border-bottom: 1px solid whitesmoke;
+}
+
+#search-by-city {
+    margin-left: 4px;
+    color: black;
+}
+
+#search-by-city:hover {
+    color: grey;
+}
