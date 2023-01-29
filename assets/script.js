@@ -1,3 +1,11 @@
+// Add 'submit' event listener for search input
+// button.addEventListener("submit", myFunction);
+
+// 'click' event listener for navigation city names
+// button.addEventListener("click", myFunction);
+// add to HTML: <button onclick="myFunction()">Click me</button>
+
+
 // use day.js to pull current date in MM/DD/YYYY format
 
 
