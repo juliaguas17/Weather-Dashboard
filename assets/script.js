@@ -81,7 +81,7 @@ function currentConditionsRequest(searchValue) {
         currentTemp.text(response.main.temp);
         currentTemp.append("&deg;F");
         currentHumidity.text(response.main.humidity + "%");
-        currentWindSpeed.text(response.wind.speed + "MPH");
+        currentWindSpeed.text(response.wind.speed + " mph");
 
         var lat = response.coord.lat;
         var lon = response.coord.lon;
