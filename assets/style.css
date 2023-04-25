@@ -1,22 +1,16 @@
-.container-fluid {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: white
+html, body, .container-fluid, .content-row {
+    height: 100%;
 }
 
-.subtitle {
-    padding-bottom: 10px;
-    border-bottom: 1px solid whitesmoke;
+.hide {
+    display: none;
 }
 
-#search-by-city {
-    margin-left: 4px;
-    color: black;
+.city-btn:hover {
+    background-color: #f6f5f5;
+    cursor: pointer;
 }
 
-#search-by-city:hover {
-    color: grey;
-
+.card {
+    background-color: #cce5ff;
 }
