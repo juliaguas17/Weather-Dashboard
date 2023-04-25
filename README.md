@@ -29,4 +29,4 @@ THEN I am again presented with current and future conditions for that city
 https://juliaguas17.github.io/Weather-Dashboard/
 
 ## Further Development
-Some of the CSS elements I used (in the Weather Dashboard title, for example) do not load on the deployed page, but will load locally, likely due to some Bootstrap bugs in my code.
+Some of the CSS elements I used (in the Weather Dashboard title, for example) do not load on the deployed page, but will load locally. This is likely due to some Bootstrap bugs in my code.
