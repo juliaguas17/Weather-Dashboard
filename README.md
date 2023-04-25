@@ -1,4 +1,4 @@
-# Week 6: Weather-Dashboard
+# 5-Day Weather Dashboard
 
 ## User Story
 
