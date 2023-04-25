@@ -19,7 +19,7 @@ var currentDate = moment().format('L');
 $("#current-date").text("(" + currentDate + ")");
 
 // Get access to the OpenWeather API
-var APIkey = "a17e1499228be1f9c294ac18b234c7d7";
+var APIkey = "2b82885f735995470d3e4c3561b9e55c";
 
 // Check for search history
 initalizeHistory();
