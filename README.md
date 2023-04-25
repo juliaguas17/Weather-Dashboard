@@ -1,4 +1,4 @@
-# 5 Day Weather Dashboard
+# 5-Day Weather Dashboard
 
 ## User Story
 
