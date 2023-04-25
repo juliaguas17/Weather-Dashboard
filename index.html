@@ -1,54 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title> Weather Forecast </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--- Stylesheets -->
-        <link href="assets/style.css" rel="stylesheet">
-        <link href="https://getbootstrap.com/docs/3.4/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href= "https://getbootstrap.com/docs/3.4/examples/dashboard/dashboard.css" rel="stylesheet">
-        <!-- Add weather icons -->
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Weather Dashboard </title>
 
-    <body>
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container-fluid">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Assets/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row navbar navbar-dark bg-dark">
+            <div class="col-12 text-center">
+                <h1 class="navbar-brand pb-0 px-0"> Weather Dashboard </h1>
+            </div>
+        </div>
+        <div class="row content-row">
+            <div class="col-12 col-md-3 bg-light pt-3">
+                <h5> Search for a city: </h5>
+                <form>
+                    <div class="form-group input-group">
+                        <input type="text" class="form-control" id="search-city" placeholder="Enter city here">
+                        <div class="input-group-append">
+                            <button class="btn btn-info" type="button" id="search-city-button">
+                                <i class="fa fa-search"> Search </i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <div class="card">
+                    <ul class="list-group list-group-flush" id="search-history-list">
+                    </ul>
+                    <button id="clear-history" class="btn btn-sm btn-secondary hide">Clear History</button>
+                </div>
+            </div>
+            <div id="weather-content" class="col-12 col-md-9 hide">
                 <div class="row">
-                    <!--Header Nav-->
-                    <div class="navbar-header">
-                        <a class="navbar-brand" id="search-by-city" href="#"> Search by City </a>
+                    <div class="col-12">
+                        <div class="city-info border rounded my-3 px-3 py-3">
+                            <h2 id="current-city"> City Information <small class="text-muted" id="current-date"></small></h2>
+                            <p class="mb-0"> Temperature: <span id="current-temp"></span></p>
+                            <p class="mb-0"> Humidity: <span id="current-humidity"></span></p>
+                            <p class="mb-0"> Wind Speed: <span id="current-wind-speed"></span></p>
+                            <p> UV index: <span id="uv-index"></span></p>
+                        </div>
                     </div>
-                    <div id="navbar" class="navbar-collapse collapse">
-                        <form class="navbar-form navbar-left">
-                          <input type="text" class="form-control" placeholder="Search...">
-                        </form>
-                      </div>
-                    <!-- Side Nav Styling -->
-                    <div class="col-sm-3 col-md-2 sidebar" id="side-bar">
-                        <ul class="nav nav-sidebar">
-                          <li><a href="#">Atlanta</a>
-                          <a href="#">Austin</a>
-                          <a href="#">Chicago</a></li>
-                          <li><a href="#">Denver</a>
-                          <a href="#">Kansas City</a>
-                          <a href="#">Los Angeles</a></li>
-                          <li><a href="#">Miami</a>
-                          <a href="#">New York</a>
-                          <a href="#">Seattle</a></li>
-                        </ul>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h3> 5-Day Forecast </h3>
                     </div>
-
-                    <!-- Dashboard -->
-                    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-                        <h1 class="page-header"> Weather Dashboard </h1>
-                    
-                    <!--5-Day Forecast-->
-                        <h2 class="subtitle"> 5-Day Forecast </h2>
+                </div>
+                <div id="five-day-forecast" class="row">
+                    <div class="col-2">
+                        <div class="card">
+                            <div class="card-body">
+                            <h5 class="card-title">Date</h5>
+                            <i class="fa fa-sun"></i>
+                            <p class="card-text">Temp: </p>
+                            <p class="card-text">Humidity: </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </body>
-
-    <!--Visual Reference: https://getbootstrap.com/docs/3.4/examples/dashboard/ -->
+    </div>
+    <script src="assets/script.js"></script>
+</body>
+</html>
