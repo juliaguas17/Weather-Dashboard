@@ -21,8 +21,12 @@ THEN I am presented with a 5-day forecast that displays the date, an icon repres
 WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 ```
-## Screenshot
+## Local Screenshot
 ![Dashboard](assets/images/dashboard.png)
 
 
 ## Deployed Page
+https://juliaguas17.github.io/Weather-Dashboard/
+
+## Further Development
+Some of the CSS elements I used (in the Weather Dashboard title, for example) do not load on the deployed page, but will load locally, likely due to some Bootstrap bugs in my code.
