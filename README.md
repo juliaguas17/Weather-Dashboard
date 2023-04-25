@@ -32,3 +32,4 @@ Some of the CSS elements I used (in the Weather Dashboard title, for example) do
 
 ## Contributions
 Used this repository for learning to make the proper API calls: https://github.com/franklintendo/homework-6-weather-dashboard
+App uses https://openweathermap.org/forecast5 to retrieve weather data
