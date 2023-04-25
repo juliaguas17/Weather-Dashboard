@@ -14,3 +14,19 @@ html, body, .container-fluid, .content-row {
 .card {
     background-color: #cce5ff;
 }
+
+.navbar-dark {
+    background-color: #5A7684;
+}
+
+.navbar-brand {
+    font-size: 50px;
+}
+
+#current-date {
+    margin-left: 8px;
+}
+
+#clear-history {
+    background-color: #5A7684;
+}
